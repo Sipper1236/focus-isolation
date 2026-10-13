@@ -1,0 +1,67 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Focus isolation diagnostic — observation only</title>
+<style>body{font:16px system-ui;max-width:850px;margin:30px auto}button,input{font:inherit;margin:6px}pre{max-height:320px;overflow:auto;background:#eee;padding:12px}</style>
+<h1>Focus / visibility observer</h1>
+<p>This page observes its own state. It never sets focus, overrides APIs, or generates input. No typed text or key values are recorded. Keep this tab selected throughout Test B.</p>
+<button id="start">Start Test B in 5 seconds</button>
+<button id="stop" disabled>Stop measurement</button>
+<button id="export">Export observations</button>
+<p id="status">Not measuring</p>
+<label>Type here before starting and after returning: <input id="input" autocomplete="off"></label>
+<button id="click">Real click target</button>
+<form id="form"><label>Ordinary form: <input name="example" autocomplete="off"></label><button>Submit locally</button></form>
+<p id="submitted"></p>
+<a href="/interaction.html">Navigation test (after stopping Test B)</a>
+<p id="state"></p><pre id="events"></pre>
+<div style="height:1200px">Scroll this page with real input.</div>
+<script>
+'use strict';
+const run = {schema:1, id:crypto.randomUUID(), userAgent:navigator.userAgent,
+  timeOrigin:performance.timeOrigin, samplePeriodMs:250, events:[], started:null, ended:null};
+let armed=false, pending=false;
+const state=document.querySelector('#state'), log=document.querySelector('#events');
+function observe(type, extra={}) {
+  const row={type,wallMs:Date.now(),monoMs:performance.now(),focused:document.hasFocus(),
+    visibility:document.visibilityState,...extra};
+  if(armed || type==='start' || type==='stop') run.events.push(row);
+  state.textContent=`Focused: ${row.focused} | Visibility: ${row.visibility} | Samples/events: ${run.events.length}`;
+  if(type!=='sample') log.textContent=JSON.stringify(row)+'\n'+log.textContent.slice(0,15000);
+  // A bounded run avoids silently losing observations when memory is exhausted.
+  if(type!=='stop' && run.events.length>=40000 && armed) finish('capacity reached');
+}
+window.addEventListener('focus',()=>observe('focus'));
+window.addEventListener('blur',()=>observe('blur'));
+document.addEventListener('visibilitychange',()=>observe('visibilitychange'));
+for(const name of ['click','input','scroll'])
+  document.addEventListener(name,e=>observe('input:'+name,{trusted:e.isTrusted}),{passive:true});
+setInterval(()=>observe('sample'),run.samplePeriodMs);
+document.querySelector('#start').onclick=()=>{
+  if(armed || pending || run.started!==null) return;
+  pending=true;
+  document.querySelector('#status').textContent='Starting in 5 seconds; put the caret in the input.';
+  document.querySelector('#start').disabled=true;
+  setTimeout(()=>{
+    pending=false;run.started=Date.now();armed=true;observe('start');
+    document.querySelector('#status').textContent='MEASURING — perform 20 real host switches and returns.';
+    document.querySelector('#stop').disabled=false;
+  },5000);
+};
+function finish(reason='manual') {
+  if(!armed)return;
+  observe('stop',{reason});armed=false;run.ended=Date.now();
+  document.querySelector('#stop').disabled=true;
+  document.querySelector('#status').textContent='Stopped. Export observations; reload for another run.';
+}
+document.querySelector('#stop').onclick=()=>finish();
+document.querySelector('#export').onclick=()=>{
+  if(armed || pending){document.querySelector('#status').textContent='Stop measurement before export.';return;}
+  const url=URL.createObjectURL(new Blob([JSON.stringify(run,null,2)],{type:'application/json'}));
+  const a=document.createElement('a');a.href=url;a.download=`focus-${run.id}.json`;a.click();
+  setTimeout(()=>URL.revokeObjectURL(url),1000);
+};
+document.querySelector('#form').onsubmit=e=>{e.preventDefault();
+  document.querySelector('#submitted').textContent='Form submitted locally; values are not recorded.';
+  observe('form-submit',{trusted:e.isTrusted});};
+observe('loaded');
+</script>

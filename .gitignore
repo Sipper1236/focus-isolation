@@ -1,0 +1,16 @@
+__pycache__/
+macos/build/
+*.jsonl
+*.raw
+*.iso
+*.dmg
+private-results/
+*.tar.gz
+*.tar.zst
+migration/transfer-status.json
+migration/transfer-status.tmp
+migration/transfer-worker.log
+migration/ryoport-status.json
+migration/ryoport-status.tmp
+dist/
+migration/
