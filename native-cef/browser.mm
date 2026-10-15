@@ -526,7 +526,7 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   if (!targets.count) { [self switchFailure:@"Finder is not running; no confirmed external foreground target."]; return; }
   self.switchTarget=targets[0];
   // Own diagnostic instrumentation only: arm its observer, without altering page APIs/state.
-  browser->GetMainFrame()->ExecuteJavaScript("run.started=Date.now(); armed=true; observe('start');","",0);
+  browser->GetMainFrame()->ExecuteJavaScript("run.started=Date.now(); armed=true; observe('start');",browser->GetMainFrame()->GetURL(),0);
   dispatch_after(dispatch_time(DISPATCH_TIME_NOW,NSEC_PER_SEC),dispatch_get_main_queue(),^{ [self switchAway]; });
 }
 - (void)switchAway {
@@ -548,7 +548,7 @@ class BrowserClient : public CefClient, public CefRenderHandler,
           if (self.completedSwitches<switchCycles) { [self switchAway]; return; }
           if (!self->browser) return;
           self->browser->GetMainFrame()->ExecuteJavaScript(
-            "finish('automatic host-switch probe'); console.info('FOCUS_SWITCH_OBSERVATIONS:'+JSON.stringify(run));","",0);
+            "finish('automatic host-switch probe'); console.info('FOCUS_SWITCH_OBSERVATIONS:'+JSON.stringify(run));",self->browser->GetMainFrame()->GetURL(),0);
           dispatch_after(dispatch_time(DISPATCH_TIME_NOW,5*NSEC_PER_SEC),dispatch_get_main_queue(),^{
             if (self->browser) [self switchFailure:@"Diagnostic did not export its observation data."];
           });
