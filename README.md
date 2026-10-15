@@ -121,8 +121,12 @@ into that site. A site may still infer inactivity from other signals.
 
 - ARM64 Mac compilation, development signature verification, launch, diagnostic
   loading and painting passed [the Mac CI check](https://github.com/Sipper1236/focus-isolation/actions/runs/38660492521).
-  Genuine input, ordinary browser compatibility and the 20 host-switch cycles
-  remain unverified. CI does not certify focus isolation or sandbox enforcement.
+  A separate [Mac focus study](docs/evidence/native-mac-38662037693/README.md)
+  passed 20 confirmed Finder/browser switches: all 432 observations stayed
+  focused/visible, with no focus/blur/visibility events. A real engine-focus-loss
+  negative control detected blur. This is preliminary hosted-runner evidence;
+  genuine input, full A–D, physical M4 compatibility and sandbox enforcement
+  remain unverified.
 - International input is a first-pass Cocoa/CEF composition implementation;
   surrounding-text reconversion is missing and needs IME testing.
 - Popup links are redirected into the current browser; popup-dependent login

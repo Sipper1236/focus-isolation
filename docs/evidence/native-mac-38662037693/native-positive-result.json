@@ -1,0 +1,16 @@
+{
+  "scope": "Automatic real macOS foreground switches only. No user input. NOT acceptance Test B.",
+  "standardEvaluator": {
+    "result": "FAIL_OR_INCOMPLETE",
+    "cycles": 20,
+    "maxSampleGapMs": 408.39999999990687,
+    "issues": [
+      "Observer stopped unexpectedly; run incomplete.",
+      "No genuine text input recorded after final return."
+    ],
+    "scope": "Only supplied observations; manual A/C/D, clock alignment and real host switching require attestation."
+  },
+  "negativeControl": false,
+  "genuineInputAndCompatibilityTestsRequired": true,
+  "focusVisibilityObservationsPass": true
+}

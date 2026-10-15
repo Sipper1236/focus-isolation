@@ -14,10 +14,15 @@ args=parser.parse_args()
 root=Path(__file__).resolve().parents[1]
 profile=Path.home()/'Library/Application Support/FocusBrowser'
 page=json.loads((profile/'native-host-switch-observations.json').read_text())
-assert not page.get('inconclusive'), page
-assert page['events'][-1]['reason']=='automatic host-switch probe', page
 host_file=max(profile.glob('host-*.jsonl'),key=lambda p:p.stat().st_mtime_ns)
 host=[json.loads(line) for line in host_file.read_text().splitlines() if line.strip()]
+dest=root/'dist';dest.mkdir(exist_ok=True)
+prefix='native-negative' if args.negative else 'native-positive'
+# Preserve the evidence even when validation fails.
+(dest/(prefix+'-observations.json')).write_text(json.dumps(page,indent=2)+'\n')
+(dest/(prefix+'-host.jsonl')).write_text(host_file.read_text())
+assert not page.get('inconclusive'), page
+assert page['events'][-1]['reason']=='automatic host-switch probe', page
 spec=importlib.util.spec_from_file_location('report',root/'diagnostic/report.py')
 report=importlib.util.module_from_spec(spec);spec.loader.exec_module(report)
 result=report.evaluate(page,host)
@@ -37,9 +42,5 @@ else:
     confirmed=sum(e['type']=='switch-away-confirmed' for e in host)
     assert confirmed>=20, host
     output['focusVisibilityObservationsPass']=True
-dest=root/'dist';dest.mkdir(exist_ok=True)
-prefix='native-negative' if args.negative else 'native-positive'
-(dest/(prefix+'-observations.json')).write_text(json.dumps(page,indent=2)+'\n')
-(dest/(prefix+'-host.jsonl')).write_text(host_file.read_text())
 (dest/(prefix+'-result.json')).write_text(json.dumps(output,indent=2)+'\n')
 print(json.dumps(output,indent=2))

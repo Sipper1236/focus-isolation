@@ -50,7 +50,21 @@ host filesystem sharing. Test those boundaries before accepting them.
 closes the browser. It writes `native-build-smoke.json` in the app data folder.
 It performs no clicks, typing or host-switch simulation, and is not acceptance
 evidence for focus, ordinary input or security. GitHub CI runs that limited
-check after compilation; genuine input and 20 host cycles are manual.
+check after compilation.
+
+`--switch-check` separately activates Finder and returns to the browser for
+20 cycles, confirming the foreground process each time. The bundled diagnostic
+records the actual Blink getters and events; no keyboard/mouse input is generated.
+`--switch-check --follow-host-focus --two-cycles` is a negative control that
+forwards real app activation changes to CEF engine focus, so the observer must
+detect focus loss and blur. These flags only instrument the owned diagnostic;
+they do not inject scripts into third-party pages or override browser APIs.
+
+`python3 native-cef/check-switch-observations.py` evaluates that preliminary
+study and saves raw page/host observations under `dist/`. Use `--negative` for
+the control. This deliberately does not pass full acceptance Test B: genuine
+input after return and manual A/C/D remain required. The normal conservative
+evaluator's missing-input/incomplete findings remain visible in its report.
 
 Sources:
 

@@ -1,0 +1,3036 @@
+{
+  "schema": 1,
+  "id": "32b4e120-ce9b-479d-b4f1-fe6d1962fc80",
+  "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36",
+  "timeOrigin": 1792025401080.4,
+  "samplePeriodMs": 250,
+  "events": [
+    {
+      "type": "start",
+      "wallMs": 1792025402422,
+      "monoMs": 1342.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025402423,
+      "monoMs": 1342.6999999999534,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025402699,
+      "monoMs": 1619.0999999999767,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025403041,
+      "monoMs": 1961.1999999999534,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025403209,
+      "monoMs": 2129.0999999999767,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025403467,
+      "monoMs": 2387.1999999999534,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025403653,
+      "monoMs": 2573.1999999999534,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025403983,
+      "monoMs": 2902.6999999999534,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025404194,
+      "monoMs": 3114.5999999999767,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025404454,
+      "monoMs": 3373.6999999999534,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025404791,
+      "monoMs": 3711.1999999999534,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025405041,
+      "monoMs": 3961.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025405294,
+      "monoMs": 4213.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025405474,
+      "monoMs": 4394.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025405642,
+      "monoMs": 4562.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025405909,
+      "monoMs": 4829,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025406291,
+      "monoMs": 5211.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025406466,
+      "monoMs": 5385.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025406657,
+      "monoMs": 5577.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025407039,
+      "monoMs": 5959.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025407206,
+      "monoMs": 6126.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025407541,
+      "monoMs": 6461.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025407663,
+      "monoMs": 6582.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025407915,
+      "monoMs": 6835.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025408177,
+      "monoMs": 7096.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025408425,
+      "monoMs": 7344.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025408670,
+      "monoMs": 7589.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025409002,
+      "monoMs": 7922.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025409168,
+      "monoMs": 8088.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025409477,
+      "monoMs": 8397.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025409755,
+      "monoMs": 8675,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025410041,
+      "monoMs": 8961.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025410170,
+      "monoMs": 9090.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025410546,
+      "monoMs": 9466.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025410643,
+      "monoMs": 9562.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025411028,
+      "monoMs": 9947.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025411156,
+      "monoMs": 10075.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025411457,
+      "monoMs": 10377,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025411718,
+      "monoMs": 10638.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025411903,
+      "monoMs": 10822.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025412273,
+      "monoMs": 11192.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025412490,
+      "monoMs": 11410.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025412709,
+      "monoMs": 11629,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025413043,
+      "monoMs": 11963.599999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025413173,
+      "monoMs": 12092.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025413501,
+      "monoMs": 12421.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025413675,
+      "monoMs": 12594.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025413896,
+      "monoMs": 12816.599999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025414291,
+      "monoMs": 13210.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025414401,
+      "monoMs": 13321.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025414800,
+      "monoMs": 13720.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025414909,
+      "monoMs": 13829.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025415208,
+      "monoMs": 14128.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025415514,
+      "monoMs": 14434.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025415816,
+      "monoMs": 14736.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025416042,
+      "monoMs": 14961.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025416158,
+      "monoMs": 15078.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025416527,
+      "monoMs": 15446.599999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025416678,
+      "monoMs": 15598.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025416932,
+      "monoMs": 15852.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025417279,
+      "monoMs": 16199,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025417402,
+      "monoMs": 16321.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025417651,
+      "monoMs": 16571.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025418043,
+      "monoMs": 16963.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025418163,
+      "monoMs": 17083,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025418447,
+      "monoMs": 17367.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025418642,
+      "monoMs": 17561.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025419040,
+      "monoMs": 17959.599999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025419245,
+      "monoMs": 18165.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025419394,
+      "monoMs": 18313.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025419801,
+      "monoMs": 18721.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025420044,
+      "monoMs": 18964.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025420184,
+      "monoMs": 19104,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025420407,
+      "monoMs": 19327,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025420795,
+      "monoMs": 19715,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025420968,
+      "monoMs": 19888.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025421173,
+      "monoMs": 20093.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025421398,
+      "monoMs": 20317.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025421793,
+      "monoMs": 20713.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025421897,
+      "monoMs": 20817.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025422168,
+      "monoMs": 21087.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025422510,
+      "monoMs": 21429.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025422648,
+      "monoMs": 21567.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025422908,
+      "monoMs": 21828.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025423289,
+      "monoMs": 22209.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025423551,
+      "monoMs": 22471.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025423646,
+      "monoMs": 22565.599999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025423917,
+      "monoMs": 22837.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025424165,
+      "monoMs": 23084.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025424406,
+      "monoMs": 23325.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025424703,
+      "monoMs": 23623.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025424896,
+      "monoMs": 23816.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025425165,
+      "monoMs": 24084.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025425544,
+      "monoMs": 24463.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025425684,
+      "monoMs": 24603.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025425892,
+      "monoMs": 24812.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025426291,
+      "monoMs": 25211.599999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025426480,
+      "monoMs": 25399.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025426801,
+      "monoMs": 25721.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025427043,
+      "monoMs": 25962.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025427176,
+      "monoMs": 26096.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025427550,
+      "monoMs": 26470,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025427726,
+      "monoMs": 26646.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025427922,
+      "monoMs": 26841.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025428231,
+      "monoMs": 27151.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025428395,
+      "monoMs": 27314.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025428798,
+      "monoMs": 27718.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025428905,
+      "monoMs": 27825.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025429143,
+      "monoMs": 28063,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025429445,
+      "monoMs": 28364.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025429780,
+      "monoMs": 28699.699999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025430041,
+      "monoMs": 28961.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025430205,
+      "monoMs": 29124.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025430495,
+      "monoMs": 29415,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025430794,
+      "monoMs": 29713.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025430892,
+      "monoMs": 29812.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025431154,
+      "monoMs": 30074,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025431460,
+      "monoMs": 30380.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025431651,
+      "monoMs": 30571.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025432051,
+      "monoMs": 30971.400000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025432145,
+      "monoMs": 31065.199999999953,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025432543,
+      "monoMs": 31462.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025432651,
+      "monoMs": 31570.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025433044,
+      "monoMs": 31964,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025433157,
+      "monoMs": 32076.900000000023,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025433504,
+      "monoMs": 32424.099999999977,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025433666,
+      "monoMs": 32585.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025434045,
+      "monoMs": 32965,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025434174,
+      "monoMs": 33094.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025434550,
+      "monoMs": 33470,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025434801,
+      "monoMs": 33721.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025434895,
+      "monoMs": 33815.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025435291,
+      "monoMs": 34210.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025435458,
+      "monoMs": 34377.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025435656,
+      "monoMs": 34575.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025435903,
+      "monoMs": 34823.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025436206,
+      "monoMs": 35126.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025436418,
+      "monoMs": 35338.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025436706,
+      "monoMs": 35626.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025437044,
+      "monoMs": 35964.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025437291,
+      "monoMs": 36211.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025437508,
+      "monoMs": 36428.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025437724,
+      "monoMs": 36644.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025437907,
+      "monoMs": 36826.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025438292,
+      "monoMs": 37212.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025438407,
+      "monoMs": 37327,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025438648,
+      "monoMs": 37568.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025438901,
+      "monoMs": 37820.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025439144,
+      "monoMs": 38064.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025439537,
+      "monoMs": 38457.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025439652,
+      "monoMs": 38571.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025440044,
+      "monoMs": 38963.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025440198,
+      "monoMs": 39118.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025440393,
+      "monoMs": 39313.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025440642,
+      "monoMs": 39562.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025440902,
+      "monoMs": 39822.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025441218,
+      "monoMs": 40137.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025441510,
+      "monoMs": 40430.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025441757,
+      "monoMs": 40676.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025442043,
+      "monoMs": 40963.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025442293,
+      "monoMs": 41212.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025442505,
+      "monoMs": 41425.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025442801,
+      "monoMs": 41721.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025442921,
+      "monoMs": 41841.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025443146,
+      "monoMs": 42066.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025443490,
+      "monoMs": 42410.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025443799,
+      "monoMs": 42719.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025443924,
+      "monoMs": 42844,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025444172,
+      "monoMs": 43092.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025444549,
+      "monoMs": 43469.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025444648,
+      "monoMs": 43568.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025444898,
+      "monoMs": 43818.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025445292,
+      "monoMs": 44212.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025445416,
+      "monoMs": 44336.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025445796,
+      "monoMs": 44716.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025446049,
+      "monoMs": 44969.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025446176,
+      "monoMs": 45096.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025446545,
+      "monoMs": 45464.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025446728,
+      "monoMs": 45647.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025446912,
+      "monoMs": 45832.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025447299,
+      "monoMs": 46219,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025447434,
+      "monoMs": 46353.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025447682,
+      "monoMs": 46602.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025448041,
+      "monoMs": 46961.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025448291,
+      "monoMs": 47211.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025448541,
+      "monoMs": 47461.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025448772,
+      "monoMs": 47691.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025449045,
+      "monoMs": 47964.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025449297,
+      "monoMs": 48216.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025449467,
+      "monoMs": 48386.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025449708,
+      "monoMs": 48627.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025449994,
+      "monoMs": 48914.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025450149,
+      "monoMs": 49069.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025450542,
+      "monoMs": 49462.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025450648,
+      "monoMs": 49568.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025451041,
+      "monoMs": 49961,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025451234,
+      "monoMs": 50154.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025451529,
+      "monoMs": 50449,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025451667,
+      "monoMs": 50586.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025452007,
+      "monoMs": 50926.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025452188,
+      "monoMs": 51107.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025452540,
+      "monoMs": 51460.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025452676,
+      "monoMs": 51596.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025452922,
+      "monoMs": 51842,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025453167,
+      "monoMs": 52086.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025453543,
+      "monoMs": 52463.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025453674,
+      "monoMs": 52594.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025453893,
+      "monoMs": 52813.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025454172,
+      "monoMs": 53092.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025454424,
+      "monoMs": 53344.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025454794,
+      "monoMs": 53714.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025454921,
+      "monoMs": 53840.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025455167,
+      "monoMs": 54087,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025455426,
+      "monoMs": 54346.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025455645,
+      "monoMs": 54564.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025455907,
+      "monoMs": 54827,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025456262,
+      "monoMs": 55182.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025456416,
+      "monoMs": 55336.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025456774,
+      "monoMs": 55694.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025457043,
+      "monoMs": 55963.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025457180,
+      "monoMs": 56100.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025457412,
+      "monoMs": 56331.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025457648,
+      "monoMs": 56568.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025457992,
+      "monoMs": 56912.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025458292,
+      "monoMs": 57212.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025458417,
+      "monoMs": 57337.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025458796,
+      "monoMs": 57715.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025458893,
+      "monoMs": 57812.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025459301,
+      "monoMs": 58221.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025459433,
+      "monoMs": 58353.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025459793,
+      "monoMs": 58713.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025459904,
+      "monoMs": 58824.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025460295,
+      "monoMs": 59215.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025460406,
+      "monoMs": 59325.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025460792,
+      "monoMs": 59711.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025460902,
+      "monoMs": 59821.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025461293,
+      "monoMs": 60213.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025461442,
+      "monoMs": 60362.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025461722,
+      "monoMs": 60642,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025461903,
+      "monoMs": 60823.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025462154,
+      "monoMs": 61073.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025462393,
+      "monoMs": 61312.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025462704,
+      "monoMs": 61623.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025462922,
+      "monoMs": 61842.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025463263,
+      "monoMs": 62183.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025463392,
+      "monoMs": 62311.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025463726,
+      "monoMs": 62645.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025464047,
+      "monoMs": 62967.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025464278,
+      "monoMs": 63197.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025464421,
+      "monoMs": 63340.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025464674,
+      "monoMs": 63594.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025464916,
+      "monoMs": 63836.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025465161,
+      "monoMs": 64081.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025465548,
+      "monoMs": 64468.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025465655,
+      "monoMs": 64574.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025465917,
+      "monoMs": 64837.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025466144,
+      "monoMs": 65064.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025466396,
+      "monoMs": 65316.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025466800,
+      "monoMs": 65719.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025466925,
+      "monoMs": 65845.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025467259,
+      "monoMs": 66179.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025467441,
+      "monoMs": 66361.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025467786,
+      "monoMs": 66706,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025468042,
+      "monoMs": 66962,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025468150,
+      "monoMs": 67070.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025468548,
+      "monoMs": 67468.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025468648,
+      "monoMs": 67568.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025468927,
+      "monoMs": 67846.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025469173,
+      "monoMs": 68093.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025469494,
+      "monoMs": 68414.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025469676,
+      "monoMs": 68596.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025469922,
+      "monoMs": 68842,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025470153,
+      "monoMs": 69073,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025470543,
+      "monoMs": 69463.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025470795,
+      "monoMs": 69714.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025470942,
+      "monoMs": 69862,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025471264,
+      "monoMs": 70183.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025471417,
+      "monoMs": 70337,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025471735,
+      "monoMs": 70655,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025471984,
+      "monoMs": 70904.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025472152,
+      "monoMs": 71071.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025472544,
+      "monoMs": 71463.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025472723,
+      "monoMs": 71643.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025473027,
+      "monoMs": 71947.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025473294,
+      "monoMs": 72213.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025473447,
+      "monoMs": 72367.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025473648,
+      "monoMs": 72567.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025474005,
+      "monoMs": 72924.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025474166,
+      "monoMs": 73086.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025474417,
+      "monoMs": 73336.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025474643,
+      "monoMs": 73562.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025475042,
+      "monoMs": 73961.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025475145,
+      "monoMs": 74065.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025475546,
+      "monoMs": 74465.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025475699,
+      "monoMs": 74619.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025476041,
+      "monoMs": 74961.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025476147,
+      "monoMs": 75067,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025476402,
+      "monoMs": 75322.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025476801,
+      "monoMs": 75721.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025477030,
+      "monoMs": 75949.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025477160,
+      "monoMs": 76079.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025477542,
+      "monoMs": 76461.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025477792,
+      "monoMs": 76712.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025477943,
+      "monoMs": 76862.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025478196,
+      "monoMs": 77116.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025478551,
+      "monoMs": 77471.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025478750,
+      "monoMs": 77670.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025479024,
+      "monoMs": 77943.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025479164,
+      "monoMs": 78083.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025479444,
+      "monoMs": 78364,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025479729,
+      "monoMs": 78649.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025479979,
+      "monoMs": 78899.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025480207,
+      "monoMs": 79127.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025480423,
+      "monoMs": 79342.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025480798,
+      "monoMs": 79717.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025480904,
+      "monoMs": 79824,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025481224,
+      "monoMs": 80144.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025481551,
+      "monoMs": 80471.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025481751,
+      "monoMs": 80670.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025482045,
+      "monoMs": 80965.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025482143,
+      "monoMs": 81062.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025482549,
+      "monoMs": 81469.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025482800,
+      "monoMs": 81720.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025482918,
+      "monoMs": 81838.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025483294,
+      "monoMs": 82214.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025483467,
+      "monoMs": 82387,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025483710,
+      "monoMs": 82630.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025483980,
+      "monoMs": 82900,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025484293,
+      "monoMs": 83213.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025484404,
+      "monoMs": 83324.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025484647,
+      "monoMs": 83567.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025485000,
+      "monoMs": 83919.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025485301,
+      "monoMs": 84221.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025485394,
+      "monoMs": 84313.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025485741,
+      "monoMs": 84660.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025486041,
+      "monoMs": 84961.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025486206,
+      "monoMs": 85125.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025486419,
+      "monoMs": 85338.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025486666,
+      "monoMs": 85586.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025487005,
+      "monoMs": 85925.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025487262,
+      "monoMs": 86181.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025487423,
+      "monoMs": 86343.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025487666,
+      "monoMs": 86586.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025488013,
+      "monoMs": 86933.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025488267,
+      "monoMs": 87187.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025488519,
+      "monoMs": 87439.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025488791,
+      "monoMs": 87711.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025488981,
+      "monoMs": 87901,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025489278,
+      "monoMs": 88197.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025489536,
+      "monoMs": 88456.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025489723,
+      "monoMs": 88643.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025489938,
+      "monoMs": 88857.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025490236,
+      "monoMs": 89155.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025490547,
+      "monoMs": 89466.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025490655,
+      "monoMs": 89575.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025491029,
+      "monoMs": 89948.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025491301,
+      "monoMs": 90221.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025491415,
+      "monoMs": 90335.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025491681,
+      "monoMs": 90601.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025491993,
+      "monoMs": 90912.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025492179,
+      "monoMs": 91099.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025492417,
+      "monoMs": 91337.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025492791,
+      "monoMs": 91710.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025492906,
+      "monoMs": 91826.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025493153,
+      "monoMs": 92072.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025493424,
+      "monoMs": 92343.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025493752,
+      "monoMs": 92672.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025494043,
+      "monoMs": 92962.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025494164,
+      "monoMs": 93084.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025494450,
+      "monoMs": 93370.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025494791,
+      "monoMs": 93711.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025494895,
+      "monoMs": 93814.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025495159,
+      "monoMs": 94079,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025495548,
+      "monoMs": 94467.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025495763,
+      "monoMs": 94683.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025495905,
+      "monoMs": 94824.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025496301,
+      "monoMs": 95220.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025496475,
+      "monoMs": 95394.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025496655,
+      "monoMs": 95574.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025496899,
+      "monoMs": 95818.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025497293,
+      "monoMs": 96213.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025497400,
+      "monoMs": 96320,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025497792,
+      "monoMs": 96711.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025497922,
+      "monoMs": 96842,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025498298,
+      "monoMs": 97218.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025498546,
+      "monoMs": 97466.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025498800,
+      "monoMs": 97720.5,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025498896,
+      "monoMs": 97815.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025499185,
+      "monoMs": 98105,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025499470,
+      "monoMs": 98390.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025499717,
+      "monoMs": 98636.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025500041,
+      "monoMs": 98961.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025500205,
+      "monoMs": 99125.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025500418,
+      "monoMs": 99338.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025500709,
+      "monoMs": 99629.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025501032,
+      "monoMs": 99951.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025501144,
+      "monoMs": 100063.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025501540,
+      "monoMs": 100460.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025501643,
+      "monoMs": 100563.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025501907,
+      "monoMs": 100826.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025502296,
+      "monoMs": 101216.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025502417,
+      "monoMs": 101337.19999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025502654,
+      "monoMs": 101574.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025503049,
+      "monoMs": 101968.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025503235,
+      "monoMs": 102155.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025503543,
+      "monoMs": 102463.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025503745,
+      "monoMs": 102665,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025503922,
+      "monoMs": 102841.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025504195,
+      "monoMs": 103114.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025504543,
+      "monoMs": 103463,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025504686,
+      "monoMs": 103606.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025504994,
+      "monoMs": 103914,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025505246,
+      "monoMs": 104166.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025505400,
+      "monoMs": 104319.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025505666,
+      "monoMs": 104585.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025505987,
+      "monoMs": 104907.59999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025506268,
+      "monoMs": 105188.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025506431,
+      "monoMs": 105350.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025506674,
+      "monoMs": 105594.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025506927,
+      "monoMs": 105847.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025507177,
+      "monoMs": 106096.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025507419,
+      "monoMs": 106338.79999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025507692,
+      "monoMs": 106611.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025507994,
+      "monoMs": 106914.09999999998,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025508176,
+      "monoMs": 107096.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025508546,
+      "monoMs": 107466.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025508797,
+      "monoMs": 107717,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025508907,
+      "monoMs": 107826.90000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025509197,
+      "monoMs": 108116.69999999995,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025509551,
+      "monoMs": 108471.29999999993,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "sample",
+      "wallMs": 1792025509792,
+      "monoMs": 108712.40000000002,
+      "focused": true,
+      "visibility": "visible"
+    },
+    {
+      "type": "stop",
+      "wallMs": 1792025509806,
+      "monoMs": 108726,
+      "focused": true,
+      "visibility": "visible",
+      "reason": "automatic host-switch probe"
+    }
+  ],
+  "started": 1792025402422,
+  "ended": 1792025509806
+}

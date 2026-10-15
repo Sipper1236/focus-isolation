@@ -47,3 +47,19 @@ Still NOT RUN: physical M4 genuine input, A–D, 20 host switches, ClickClickCli
 E/F, performance and actual sandbox/file access inspection. VM-specific Swift
 runtime verification also remains unperformed. There is no validated claim of
 focus isolation, commercial licensing, Developer ID signing or notarization.
+
+2026-10-15 UTC native foreground-switch study:
+
+[Run 38662037693](https://github.com/Sipper1236/focus-isolation/actions/runs/38662037693)
+passed build, launch/paint, 20 confirmed foreground switches and a two-cycle
+engine-focus-loss negative control. [Raw evidence and scope](evidence/native-mac-38662037693/README.md)
+record 432 focused/visible observations, no positive-run focus/visibility events,
+and a 408.4 ms maximum sampling gap. The negative control detected two blur events.
+The first study attempt was inconclusive because diagnostic export was rejected;
+assigning the owned script's source URL fixed its origin attribution. No getters,
+page events or user activity were fabricated. No third-party script injection.
+
+Full Test B remains incomplete (automatic stop, no genuine returned input),
+and A/C/D on the physical M4 remain mandatory. Full product development is gated
+on those results. UI status remains unverified. Licensing is not implemented;
+this development preview is not a commercial release.
