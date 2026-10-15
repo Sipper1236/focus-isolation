@@ -1,0 +1,14 @@
+{"type":"probe-start","uptimeMs":852430.64229166671,"wallMs":1792025510915.1179}
+{"type":"host-active","uptimeMs":852486.27275,"wallMs":1792025510970.7461}
+{"type":"engine-focus-set","uptimeMs":852708.80445833341,"wallMs":1792025511193.2812}
+{"type":"browser-created","uptimeMs":852710.31662499998,"wallMs":1792025511194.7952}
+{"type":"host-inactive","uptimeMs":854940.33916666673,"wallMs":1792025513424.8108}
+{"type":"switch-away-confirmed","uptimeMs":855443.07437500008,"wallMs":1792025513927.551}
+{"type":"host-active","uptimeMs":858489.55166666664,"wallMs":1792025516974.031}
+{"type":"switch-return-confirmed","uptimeMs":859003.85175000003,"wallMs":1792025517488.3252}
+{"type":"host-inactive","uptimeMs":860058.21150000009,"wallMs":1792025518542.689}
+{"type":"switch-away-confirmed","uptimeMs":860543.36320833338,"wallMs":1792025519027.8279}
+{"type":"host-active","uptimeMs":863645.52595833328,"wallMs":1792025522130.0049}
+{"type":"switch-return-confirmed","uptimeMs":864160.58537500014,"wallMs":1792025522645.0601}
+{"type":"browser-closed","uptimeMs":865217.55145833339,"wallMs":1792025523702.019}
+{"type":"probe-stop","uptimeMs":865229.45112500014,"wallMs":1792025523713.9221}
