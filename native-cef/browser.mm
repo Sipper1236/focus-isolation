@@ -141,7 +141,8 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   bool GetScreenInfo(CefRefPtr<CefBrowser> b, CefScreenInfo& info) override {
     info.device_scale_factor = owner_.window.backingScaleFactor;
     info.depth = 32; info.depth_per_component = 8;
-    GetViewRect(b, info.rect); info.available_rect = info.rect;
+    CefRect rect;
+    GetViewRect(b, rect); info.rect=rect; info.available_rect=rect;
     return true;
   }
   bool GetScreenPoint(CefRefPtr<CefBrowser>, int x, int y, int& sx, int& sy) override {
@@ -273,7 +274,8 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   CGDataProviderRef provider = CGDataProviderCreateWithCFData(data);
   CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
   CGImageRef image = CGImageCreate(w,h,8,32,w*4,space,
-      kCGBitmapByteOrder32Little|kCGImageAlphaPremultipliedFirst,provider,nullptr,false,kCGRenderingIntentDefault);
+      static_cast<CGBitmapInfo>(kCGBitmapByteOrder32Little)|static_cast<CGBitmapInfo>(kCGImageAlphaPremultipliedFirst),
+      provider,nullptr,false,kCGRenderingIntentDefault);
   if (image) {
     NSImage* bitmap = [[NSImage alloc] initWithCGImage:image size:rect.size];
     [bitmap drawInRect:rect fromRect:NSZeroRect operation:NSCompositingOperationCopy
