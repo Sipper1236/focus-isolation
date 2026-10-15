@@ -48,4 +48,5 @@ add_custom_command(TARGET FocusBrowser POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_directory "${CMAKE_CURRENT_SOURCE_DIR}/../diagnostic"
           "${CEF_APP}/Contents/Resources/diagnostic"
   COMMAND ${CMAKE_COMMAND} -E copy "${CEF_ROOT}/LICENSE.txt" "${CEF_APP}/Contents/Resources/CEF-LICENSE.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "${CEF_ROOT}/CREDITS.html" "${CEF_APP}/Contents/Resources/CEF-CREDITS.html"
   VERBATIM)
