@@ -9,6 +9,8 @@
 #include "include/cef_display_handler.h"
 #include "include/cef_load_handler.h"
 #include "include/cef_request_handler.h"
+#include "include/cef_download_handler.h"
+#include "include/cef_download_item.h"
 #include "include/wrapper/cef_helpers.h"
 #include "include/wrapper/cef_library_loader.h"
 #include <sys/file.h>
@@ -112,7 +114,7 @@ static int WindowsKey(NSEvent* event) {
 
 class BrowserClient : public CefClient, public CefRenderHandler,
     public CefLifeSpanHandler, public CefDisplayHandler, public CefLoadHandler,
-    public CefRequestHandler {
+    public CefRequestHandler, public CefDownloadHandler {
  public:
   explicit BrowserClient(BrowserController* owner) : owner_(owner) {}
   CefRefPtr<CefRenderHandler> GetRenderHandler() override { return this; }
@@ -120,6 +122,18 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   CefRefPtr<CefDisplayHandler> GetDisplayHandler() override { return this; }
   CefRefPtr<CefLoadHandler> GetLoadHandler() override { return this; }
   CefRefPtr<CefRequestHandler> GetRequestHandler() override { return this; }
+  CefRefPtr<CefDownloadHandler> GetDownloadHandler() override { return this; }
+  bool OnBeforeDownload(CefRefPtr<CefBrowser>, CefRefPtr<CefDownloadItem>,
+      const CefString& name, CefRefPtr<CefBeforeDownloadCallback> callback) override {
+    // Always ask the user where to save, including explicit diagnostic exports.
+    callback->Continue(name,true);
+    return true;
+  }
+  void OnDownloadUpdated(CefRefPtr<CefBrowser>, CefRefPtr<CefDownloadItem> item,
+      CefRefPtr<CefDownloadItemCallback>) override {
+    if (item->IsComplete()) owner_.status.stringValue=@"Download saved • Focus isolation unverified";
+    else if (item->IsCanceled()) owner_.status.stringValue=@"Download canceled • Focus isolation unverified";
+  }
   void GetViewRect(CefRefPtr<CefBrowser>, CefRect& rect) override {
     NSRect r = owner_.surface.bounds;
     rect = CefRect(0, 0, std::max(1, (int)r.size.width), std::max(1, (int)r.size.height));
@@ -159,7 +173,8 @@ class BrowserClient : public CefClient, public CefRenderHandler,
     return true;
   }
   void OnAfterCreated(CefRefPtr<CefBrowser> b) override {
-    owner_->browser = b; owner_.surface->browser = b;
+    BrowserController* owner=owner_;
+    owner->browser = b; owner.surface->browser = b;
     b->GetHost()->SetFocus(true);
     Observe(@"engine-focus-set");
     [owner_.window makeFirstResponder:owner_.surface];
@@ -167,7 +182,8 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   }
   void OnBeforeClose(CefRefPtr<CefBrowser>) override {
     Observe(@"browser-closed");
-    owner_.surface->browser = nullptr; owner_->browser = nullptr;
+    BrowserController* owner=owner_;
+    owner.surface->browser = nullptr; owner->browser = nullptr;
     CefQuitMessageLoop();
   }
   bool OnBeforePopup(CefRefPtr<CefBrowser> b, CefRefPtr<CefFrame>, int,
