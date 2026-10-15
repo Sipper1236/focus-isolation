@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>${EXECUTABLE_NAME}</string>
+<key>CFBundleIdentifier</key><string>local.focusisolation.browser</string>
+<key>CFBundleName</key><string>${PRODUCT_NAME}</string>
+<key>CFBundleDisplayName</key><string>Focus Browser</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleVersion</key><string>3</string>
+<key>CFBundleShortVersionString</key><string>0.3.0</string>
+<key>LSMinimumSystemVersion</key><string>13.0</string>
+<key>NSPrincipalClass</key><string>FocusApplication</string>
+<key>NSHighResolutionCapable</key><true/>
+<key>NSSupportsAutomaticGraphicsSwitching</key><true/>
+<key>LSEnvironment</key><dict><key>MallocNanoZone</key><string>0</string></dict>
+</dict></plist>

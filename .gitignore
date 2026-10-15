@@ -14,3 +14,5 @@ migration/ryoport-status.json
 migration/ryoport-status.tmp
 dist/
 migration/
+native-cef/build/
+native-cef/vendor/

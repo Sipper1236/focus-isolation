@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0"><dict>
+<key>CFBundleExecutable</key><string>@HELPER_EXECUTABLE@</string>
+<key>CFBundleIdentifier</key><string>local.focusisolation.browser.helper@HELPER_SUFFIX@</string>
+<key>CFBundleName</key><string>@HELPER_EXECUTABLE@</string>
+<key>CFBundlePackageType</key><string>APPL</string>
+<key>CFBundleVersion</key><string>3</string>
+<key>CFBundleShortVersionString</key><string>0.3.0</string>
+<key>LSMinimumSystemVersion</key><string>13.0</string>
+<key>LSUIElement</key><true/>
+<key>LSEnvironment</key><dict><key>MallocNanoZone</key><string>0</string></dict>
+</dict></plist>

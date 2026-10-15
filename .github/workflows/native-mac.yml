@@ -1,0 +1,35 @@
+name: Native Mac build
+on:
+  push:
+    paths: ['native-cef/**', 'diagnostic/**', 'Build.command', '.github/workflows/native-mac.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native:
+    runs-on: macos-26
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Build native Chromium app
+        run: bash native-cef/build.sh
+      - name: Check app launches, loads its own diagnostic and paints
+        run: |
+          native-cef/build/bin/FocusBrowser.app/Contents/MacOS/FocusBrowser --smoke
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          p=Path.home()/'Library/Application Support/FocusBrowser/native-build-smoke.json'
+          result=json.loads(p.read_text())
+          print(json.dumps(result,indent=2))
+          assert result['passed'], result
+          PY
+      - name: Package development app
+        run: |
+          mkdir -p dist
+          ditto -c -k --sequesterRsrc --keepParent native-cef/build/bin/FocusBrowser.app dist/FocusBrowser-arm64-development.zip
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: FocusBrowser-arm64-development
+          path: dist/FocusBrowser-arm64-development.zip
+          compression-level: 0

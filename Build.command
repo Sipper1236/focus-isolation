@@ -6,5 +6,5 @@ if ! xcrun --find swiftc >/dev/null 2>&1; then
   xcode-select --install
   exit 1
 fi
-bash macos/build.sh
-open 'macos/build/Focus Isolation Probe.app'
+bash native-cef/build.sh
+open 'native-cef/build/bin/FocusBrowser.app'

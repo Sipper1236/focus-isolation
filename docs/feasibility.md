@@ -1,6 +1,12 @@
 # Architecture decision record — investigation, 2026-10-09
 
 Status: **candidate only; acceptance blocked on real macOS/Apple Silicon**.
+
+2026-10-14 update: the default prototype now uses native macOS CEF off-screen
+rendering (`native-cef/`) after the user rejected exposed VM setup as the product
+experience. The VM experiment remains an alternative. An M4 tester is available;
+the native engine mechanism still needs A–D validation. See the current root
+README for installation rather than the original Linux ISO procedure.
 The available workstation is Linux, with neither Swift/macOS SDK nor Apple
 Silicon hardware. No A–F results, hardware measurements, signing or notarization
 are available. Missing hardware is an environment blocker, not evidence that

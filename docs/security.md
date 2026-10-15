@@ -5,6 +5,13 @@ acceptance and is not a complete security boundary. A site can still infer
 inactivity from missing input, timing, networking, sockets, application logic
 or other signals. We promise neither invisibility nor indistinguishability.
 
+2026-10-14: the default prototype is native CEF OSR. The VM-specific rows below
+describe the VM alternative, not native host containment. Native CEF requests
+the Chromium sandbox and uses a dedicated host profile, but browser-process
+compromise can have the host user's permissions. Explicit user clipboard and
+file-picker actions use normal Mac resources. No licensing implementation or
+telemetry was added. Focus isolation and actual sandbox enforcement are unverified.
+
 | Threat | Proposed protection | Residual risk / verification |
 |---|---|---|
 | Malicious webpage | Chromium renderer sandbox, site isolation, patched guest | Browser vulnerabilities and fingerprinting remain; sandbox must be verified |
