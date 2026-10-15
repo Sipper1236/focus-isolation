@@ -126,7 +126,7 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   bool OnBeforeDownload(CefRefPtr<CefBrowser>, CefRefPtr<CefDownloadItem>,
       const CefString& name, CefRefPtr<CefBeforeDownloadCallback> callback) override {
     // Always ask the user where to save, including explicit diagnostic exports.
-    callback->Continue(name,true);
+    callback->Continue(CefString(),true);
     return true;
   }
   void OnDownloadUpdated(CefRefPtr<CefBrowser>, CefRefPtr<CefDownloadItem> item,
