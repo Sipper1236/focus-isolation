@@ -10,6 +10,12 @@ of host application activation. A real Mac must pass the focus/visibility tests
 before this can become the commercial product. Licensing, Developer ID signing,
 notarization and production security/reliability work are still pending.
 
+[Native preview release and downloads](https://github.com/Sipper1236/focus-isolation/releases/tag/v0.3.0-native-preview).
+The release includes source and a compiled development app. The compiled app
+is ad hoc signed, so Gatekeeper may block a downloaded copy; building locally
+with the steps below avoids relying on a release signing identity. Do not
+disable system protections. Developer ID signing/notarization is not complete.
+
 ## Install and build on an Apple silicon Mac
 
 1. Download this repository using **Code → Download ZIP** and extract it, or clone it:
@@ -113,10 +119,10 @@ into that site. A site may still infer inactivity from other signals.
 
 ## Current limitations
 
-- The native implementation still needs real Mac compilation, launch, input
-  and host-switch acceptance evidence. GitHub's **Native Mac build** workflow
-  checks compilation and a limited launch/paint smoke check; it cannot certify
-  focus isolation or ordinary browser compatibility.
+- ARM64 Mac compilation, development signature verification, launch, diagnostic
+  loading and painting passed [the Mac CI check](https://github.com/Sipper1236/focus-isolation/actions/runs/38660492521).
+  Genuine input, ordinary browser compatibility and the 20 host-switch cycles
+  remain unverified. CI does not certify focus isolation or sandbox enforcement.
 - International input is a first-pass Cocoa/CEF composition implementation;
   surrounding-text reconversion is missing and needs IME testing.
 - Popup links are redirected into the current browser; popup-dependent login

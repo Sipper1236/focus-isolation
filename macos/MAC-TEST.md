@@ -1,5 +1,9 @@
 # Focus Isolation Probe — Mac tester instructions
 
+This is the legacy VM alternative. The default native CEF browser now builds
+from `Build.command`; its current instructions are in the root README and do
+not require a Linux ISO. Use the commands below only to test the VM alternative.
+
 This is the minimal runnable feasibility app, not a completed commercial
 browser. It has not been compiled or run on macOS by its author. The first
 tester should report build/start errors as well as focus results. It performs
@@ -10,11 +14,12 @@ no licensing or telemetry and must not be distributed as the licensed product.
 Extract the source ZIP. In Terminal, change to that extracted folder and run:
 
 ```sh
-bash Build.command
+bash macos/build.sh
+open 'macos/build/Focus Isolation Probe.app'
 ```
 
-If Apple command-line developer tools are missing, the script requests their
-installation. Finish Apple's installer, then run the command again. It builds
+If Apple command-line developer tools are missing, run `xcode-select --install`.
+Finish Apple's installer, then run the command above again. It builds
 `macos/build/Focus Isolation Probe.app`, signs it locally with an ad hoc
 development signature and opens it. It is not notarized. No Apple developer
 account, server secrets or browser passwords are needed for this build.

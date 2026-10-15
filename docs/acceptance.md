@@ -1,10 +1,15 @@
 # Repeatable Mac procedure
 
+**VM alternative runbook:** the current default prototype is native CEF OSR.
+Use [the root README](../README.md) for its build and A–D procedure; it requires
+no Linux ISO. The VM setup below remains for architecture comparison. Its
+lifecycle/failure cases also apply conceptually to the native implementation.
+
 Every test below is **NOT RUN**. Do not check it off from unit tests, source
 inspection, VM appearance or a Linux observation. Record failures as well as
 passes. Local reports are user-controlled evidence, not tamper-proof attestation.
 
-## M4 Mac quick start
+## VM alternative on an M4 Mac
 
 The M4 MacBook is the right physical Apple silicon host for this prototype.
 Get its exact macOS version from **Apple menu → About This Mac** and retain it
@@ -16,11 +21,11 @@ ARM64/aarch64 on Apple silicon.
 Extract the source kit on the Mac. In Terminal, enter the project root and run:
 
 ```sh
-bash Build.command
+bash macos/build.sh
 ```
 
-The script requests Apple developer tools if absent; finish installing them
-and rerun it. The resulting app has an installer picker, managed guest disk,
+Install Apple developer tools with `xcode-select --install` first if absent.
+Open `macos/build/Focus Isolation Probe.app`; it has an installer picker, managed guest disk,
 and read-only observer media. See `macos/MAC-TEST.md` for that GUI path.
 For an explicit CLI configuration instead, obtain an ARM64 Linux installer
 and create a fresh dedicated directory and blank guest disk:
