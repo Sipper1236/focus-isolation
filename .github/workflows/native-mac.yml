@@ -31,8 +31,21 @@ jobs:
         run: |
           mkdir -p dist
           ditto -c -k --sequesterRsrc --keepParent native-cef/build/bin/FocusBrowser.app dist/FocusBrowser-arm64-development.zip
+      - name: Observe 20 real macOS foreground switches without injecting input
+        run: |
+          native-cef/build/bin/FocusBrowser.app/Contents/MacOS/FocusBrowser --switch-check
+          python3 native-cef/check-switch-observations.py
+      - name: Confirm observer detects real engine focus loss in the negative control
+        run: |
+          native-cef/build/bin/FocusBrowser.app/Contents/MacOS/FocusBrowser --switch-check --follow-host-focus --two-cycles
+          python3 native-cef/check-switch-observations.py --negative
       - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: FocusBrowser-arm64-development
           path: dist/FocusBrowser-arm64-development.zip
           compression-level: 0
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        if: always()
+        with:
+          name: Native-focus-observations
+          path: dist/native-*.json*

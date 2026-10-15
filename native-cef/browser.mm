@@ -25,6 +25,9 @@
 static int reportFD = -1;
 static NSString* profileRoot;
 static bool smokeMode=false;
+static bool switchMode=false;
+static bool followHostFocus=false;
+static int switchCycles=20;
 static void SmokeResult(bool passed, NSString* reason) {
   NSDictionary* result=@{@"passed":@(passed),@"reason":reason,
       @"scope":@"Build, browser launch and page painting only. Not focus acceptance."};
@@ -107,9 +110,14 @@ static int WindowsKey(NSEvent* event) {
 @property(nonatomic,strong) NSButton* forwardButton;
 @property(nonatomic,strong) id activity;
 @property(nonatomic,strong) NSMutableArray* observers;
+@property(nonatomic,strong) NSRunningApplication* switchTarget;
+@property(nonatomic,assign) int completedSwitches;
 - (void)show;
 - (void)home:(id)sender;
 - (void)closeBrowser;
+- (void)beginSwitchCheck;
+- (void)switchAway;
+- (void)switchFailure:(NSString*)reason;
 @end
 
 class BrowserClient : public CefClient, public CefRenderHandler,
@@ -218,7 +226,31 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   void OnLoadEnd(CefRefPtr<CefBrowser>, CefRefPtr<CefFrame> frame, int) override {
     if (frame->IsMain() && frame->GetURL().ToString().find("/diagnostic/index.html")!=std::string::npos) {
       loaded_=true; FinishSmoke();
+      if (switchMode && !switchStarted_) {
+        switchStarted_=true;
+        BrowserController* owner=owner_;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW,NSEC_PER_SEC),dispatch_get_main_queue(),^{ [owner beginSwitchCheck]; });
+      }
     }
+  }
+  bool OnConsoleMessage(CefRefPtr<CefBrowser> b, cef_log_severity_t,
+      const CefString& message, const CefString& source, int) override {
+    if (!switchMode) return false;
+    NSString* home=[NSURL fileURLWithPath:[NSBundle.mainBundle.resourcePath
+        stringByAppendingPathComponent:@"diagnostic/index.html"]].absoluteString;
+    if (b->GetMainFrame()->GetURL().ToString()!=std::string(home.UTF8String)) return false;
+    NSString* origin=[NSString stringWithUTF8String:source.ToString().c_str()];
+    if (![origin hasSuffix:@"/diagnostic/index.html"]) return false;
+    NSString* text=[NSString stringWithUTF8String:message.ToString().c_str()];
+    NSString* prefix=@"FOCUS_SWITCH_OBSERVATIONS:";
+    if (![text hasPrefix:prefix] || text.length>1024*1024) return false;
+    NSData* data=[[text substringFromIndex:prefix.length] dataUsingEncoding:NSUTF8StringEncoding];
+    id parsed=[NSJSONSerialization JSONObjectWithData:data options:0 error:NULL];
+    if (![parsed isKindOfClass:NSDictionary.class]) return true;
+    [data writeToFile:[profileRoot stringByAppendingPathComponent:@"native-host-switch-observations.json"] atomically:YES];
+    BrowserController* owner=owner_;
+    dispatch_async(dispatch_get_main_queue(),^{ [owner closeBrowser]; });
+    return true;
   }
   void OnLoadError(CefRefPtr<CefBrowser>, CefRefPtr<CefFrame> frame,
       ErrorCode error, const CefString& text, const CefString&) override {
@@ -236,7 +268,7 @@ class BrowserClient : public CefClient, public CefRenderHandler,
       [owner closeBrowser];
     });
   }
-  bool loaded_=false, painted_=false, finished_=false;
+  bool loaded_=false, painted_=false, finished_=false, switchStarted_=false;
   __weak BrowserController* owner_;
   IMPLEMENT_REFCOUNTING(BrowserClient);
 };
@@ -388,7 +420,7 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   self.window=[[NSWindow alloc] initWithContentRect:NSMakeRect(0,0,1100,760)
       styleMask:NSWindowStyleMaskTitled|NSWindowStyleMaskClosable|NSWindowStyleMaskMiniaturizable|NSWindowStyleMaskResizable
       backing:NSBackingStoreBuffered defer:NO];
-  self.window.title=@"Focus Browser — experimental";
+  self.window.title=followHostFocus?@"Focus Browser — negative focus control":@"Focus Browser — experimental";
   self.window.delegate=self; self.window.releasedWhenClosed=NO;
   self.window.acceptsMouseMovedEvents=YES;
   NSView* root=self.window.contentView;
@@ -425,8 +457,14 @@ class BrowserClient : public CefClient, public CefRenderHandler,
   self.observers=[[NSMutableArray alloc] init];
   for (NSArray* pair in @[@[NSApplicationDidResignActiveNotification,@"host-inactive"],
                          @[NSApplicationDidBecomeActiveNotification,@"host-active"]]) {
+    __weak BrowserController* weakSelf=self;
     id token=[NSNotificationCenter.defaultCenter addObserverForName:pair[0] object:NSApp queue:NSOperationQueue.mainQueue
-      usingBlock:^(NSNotification* note) { Observe(pair[1]); }];
+      usingBlock:^(NSNotification* note) {
+        Observe(pair[1]);
+        BrowserController* strongSelf=weakSelf;
+        if (followHostFocus && strongSelf && strongSelf->browser)
+          strongSelf->browser->GetHost()->SetFocus(NSApp.isActive);
+      }];
     [self.observers addObject:token];
   }
   for (NSArray* pair in @[@[NSWorkspaceWillSleepNotification,@"host-sleep"],
@@ -476,6 +514,49 @@ class BrowserClient : public CefClient, public CefRenderHandler,
 - (void)focusAddress:(id)sender { [self.window makeFirstResponder:self.address]; [self.address selectText:nil]; }
 - (void)reports:(id)sender { [NSWorkspace.sharedWorkspace openURL:[NSURL fileURLWithPath:profileRoot]]; }
 - (void)quit:(id)sender { [self closeBrowser]; }
+- (void)switchFailure:(NSString*)reason {
+  NSDictionary* problem=@{@"inconclusive":@YES,@"reason":reason};
+  NSData* data=[NSJSONSerialization dataWithJSONObject:problem options:0 error:NULL];
+  [data writeToFile:[profileRoot stringByAppendingPathComponent:@"native-host-switch-observations.json"] atomically:YES];
+  [self closeBrowser];
+}
+- (void)beginSwitchCheck {
+  if (!browser || !NSApp.isActive) { [self switchFailure:@"Browser was not the active system application at baseline."]; return; }
+  NSArray* targets=[NSRunningApplication runningApplicationsWithBundleIdentifier:@"com.apple.finder"];
+  if (!targets.count) { [self switchFailure:@"Finder is not running; no confirmed external foreground target."]; return; }
+  self.switchTarget=targets[0];
+  // Own diagnostic instrumentation only: arm its observer, without altering page APIs/state.
+  browser->GetMainFrame()->ExecuteJavaScript("run.started=Date.now(); armed=true; observe('start');","",0);
+  dispatch_after(dispatch_time(DISPATCH_TIME_NOW,NSEC_PER_SEC),dispatch_get_main_queue(),^{ [self switchAway]; });
+}
+- (void)switchAway {
+  [self.switchTarget activateWithOptions:NSApplicationActivateIgnoringOtherApps];
+  dispatch_after(dispatch_time(DISPATCH_TIME_NOW,NSEC_PER_SEC/2),dispatch_get_main_queue(),^{
+    if (NSApp.isActive || NSWorkspace.sharedWorkspace.frontmostApplication.processIdentifier!=self.switchTarget.processIdentifier) {
+      [self switchFailure:@"Could not confirm Finder became foreground."]; return;
+    }
+    Observe(@"switch-away-confirmed");
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW,3*NSEC_PER_SEC),dispatch_get_main_queue(),^{
+      [NSApp activateIgnoringOtherApps:YES];
+      dispatch_after(dispatch_time(DISPATCH_TIME_NOW,NSEC_PER_SEC/2),dispatch_get_main_queue(),^{
+        if (!NSApp.isActive || NSWorkspace.sharedWorkspace.frontmostApplication.processIdentifier!=getpid()) {
+          [self switchFailure:@"Could not confirm browser returned to foreground."]; return;
+        }
+        Observe(@"switch-return-confirmed");
+        self.completedSwitches++;
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW,NSEC_PER_SEC),dispatch_get_main_queue(),^{
+          if (self.completedSwitches<switchCycles) { [self switchAway]; return; }
+          if (!self->browser) return;
+          self->browser->GetMainFrame()->ExecuteJavaScript(
+            "finish('automatic host-switch probe'); console.info('FOCUS_SWITCH_OBSERVATIONS:'+JSON.stringify(run));","",0);
+          dispatch_after(dispatch_time(DISPATCH_TIME_NOW,5*NSEC_PER_SEC),dispatch_get_main_queue(),^{
+            if (self->browser) [self switchFailure:@"Diagnostic did not export its observation data."];
+          });
+        });
+      });
+    });
+  });
+}
 - (void)closeBrowser { if (browser) browser->GetHost()->CloseBrowser(false); else CefQuitMessageLoop(); }
 - (BOOL)windowShouldClose:(NSWindow*)window { [self closeBrowser]; return NO; }
 @end
@@ -502,7 +583,12 @@ class FocusApp : public CefApp, public CefBrowserProcessHandler {
 };
 
 int main(int argc,char* argv[]) {
-  for (int i=1;i<argc;i++) if (strcmp(argv[i],"--smoke")==0) smokeMode=true;
+  for (int i=1;i<argc;i++) {
+    if (strcmp(argv[i],"--smoke")==0) smokeMode=true;
+    if (strcmp(argv[i],"--switch-check")==0) switchMode=true;
+    if (strcmp(argv[i],"--follow-host-focus")==0) followHostFocus=true;
+    if (strcmp(argv[i],"--two-cycles")==0) switchCycles=2;
+  }
   CefScopedLibraryLoader loader;
   if (!loader.LoadInMain()) return 1;
   @autoreleasepool {
